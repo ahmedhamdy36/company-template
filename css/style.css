@@ -1,0 +1,487 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+  color: white;
+}
+ 
+body {
+  background-color: #1c1e21;
+}
+
+/*=========================================*/
+                /*  navbar   */
+/*=========================================*/
+
+nav{
+  z-index: 2;
+  background-color: #1c1e21;
+}
+
+nav h2 {
+  font-size: 30px;
+  display: inline;
+  text-shadow: 10px 7px 8px black;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding-top: 7px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #0e0d0e;
+  color: orange;
+  border: 1px solid black;
+  font-size: large;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  padding: 15px 20px;  
+}
+
+/*=========================================*/
+                /*  main   */
+/*=========================================*/
+
+main {
+  width: 100%;
+  height: 657px;
+  text-align: center;
+  z-index: 1;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+}
+
+main div {
+  width: 100%;
+  position: absolute;
+  padding: 170px 10%;
+}
+
+main div h1 {
+  text-shadow: 2px -2px 2px black, 4px -4px 5px white;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+/*=========================================*/
+                /*  about   */
+/*=========================================*/
+
+.about {
+  height: 657px;
+  background-color: white;
+  padding: 30px;
+}
+
+.about h1 {
+  color: #1c1e21;
+  margin: 40px;
+}
+
+.about div {
+  background-color: #1c1e21;
+  float: left;
+  width: 480px;
+  height: 460px;
+  border-radius: 15px;
+}
+
+.about div p {
+  font-size: 30px;
+  padding: 10px;
+  line-height: 44px;
+}
+
+.about img {
+  width: 380px;
+  height: 360px;
+  box-shadow: 30px 40px 35px grey;
+  float: right;
+}
+.about img:hover {
+  transform: scale(1.1,1.1);
+  transition: all 2s ease-in-out;
+}
+
+/*=========================================*/
+                /*  our works   */
+/*=========================================*/
+
+.ourWorks {
+  height: auto;
+  background-color: #1c1e21;
+  padding: 30px;
+}
+
+.ourWorks h1 {
+  margin: 40px 40px 60px 40px;
+}
+
+.ourWorks article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourWorks article section {
+  width: 20%;
+  height: 400px;
+  background-color: #0e0d0e;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px inset;
+}
+
+.ourWorks article section * {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.ourWorks article section img {
+  width: 100%;
+  height: 150px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.ourWorks article section a {
+  text-decoration: none;
+  margin-left: 30%;
+  padding: 20px;
+}
+
+.ourWorks article section:hover {
+  transform: scale(1.2,1.2);
+  transition: all .8s ease-in-out;
+}
+
+.ourWorks article section:hover {
+  transform: scale(1.2,1.2);
+  transition: transform .8s ease-in-out;
+  box-shadow: 0px 0px 20px white;
+}
+
+.ourWorks article section a:hover {
+  background-color: #1c1e21;
+  border-radius: 50%;
+  color: orange;
+}
+
+/*=========================================*/
+                /*  team   */
+/*=========================================*/
+
+.team  h1 {
+  margin: 40px 40px 60px 40px;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  margin: 20px 7% 20px 7%;
+  transition: all 1s ease-in-out;
+  transform-style: preserve-3d;
+  float: left;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0e0d0e;
+  padding: 10px;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card > div * {
+  margin-bottom: 30px;
+} 
+
+.card .front{
+  z-index: 2;
+}
+
+.card .front h2 {
+  margin-top: 75%;
+}
+
+.card .front img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px 0px 0px -75px;
+}
+
+.card .front p {
+  color: orange;
+}
+
+.card .back {
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+.card .back ul {
+  list-style-type: none;
+}
+.card .back p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card .back a {
+  padding: 15px 110px;
+}
+
+.card .back a *:hover {
+  color: orangered;
+}
+
+/*=========================================*/
+                /*  Contact   */
+/*=========================================*/
+
+.contact  h1 {
+  margin: 80px 40px 60px 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container form {
+  width: 40%;
+  height: 470px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid peachpuff;
+}
+
+.container form *{
+  display: block;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.container form input, textarea {
+  margin-bottom: 20px;
+  width: 94%;
+  color: #0e0d0e;
+  resize: none;
+}
+
+.container form textarea {
+  height: 100px;
+  padding: 10px;
+}
+
+.container form #send {
+  background-color: #1c1e21;
+  width: 30%;
+  margin-left: 35%;
+  color: white;
+}
+
+.container form #send:hover {
+  background-color: #0e0d0e;
+  color: orange;
+
+}
+
+.container .child{
+  width: 60%;
+  height: auto;
+}
+
+.container .child .Item {
+  width: 200px;
+  height: 55px;
+  border: solid #0e0d0e;
+  font-size: 12px;
+  box-shadow: 0 0 20px white;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 40Px;
+  float: left;
+  margin: 150px 30px 50px;
+}
+
+.container .child ul {
+  list-style-type: none;
+  display: block;
+  margin: 30%;
+}
+
+.container .child ul li {
+  display: inline-block;
+  margin: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container .child ul li i:hover {
+  color: orangered;
+}
+/*=========================================*/
+                /*  labtob screen   */
+/*=========================================*/
+
+@media (max-width : 990px) and (min-width : 768px){
+  main {
+    height: 507px;
+  }
+  main div h1 {
+    font-size: 30px;
+  }
+  .about div {
+    width: 330px;
+    height: 470px;
+  }
+  .about div p {
+    font-size: 20px;
+  }
+  .about img {
+    width: 330px;
+    height: 310px;
+  }
+  .ourWorks article {
+    display: inline-block;
+  }
+  .ourWorks article section {
+    float: left;
+    width: 40%;
+    margin: 5%;
+  }
+}
+
+/*=========================================*/
+                /*  Tablet screen   */
+/*=========================================*/
+
+@media (max-width : 767px) and (min-width : 576px){
+  nav ul {
+    font-size: 13px;
+  }
+  main{
+    height: 467px;
+  }
+  main div h1 {
+    font-size: 23px;
+  }
+  main div p {
+    font-size: 13px;
+    line-height: 35px;
+  }
+  .about div {
+    width: 245px;
+    height: 425px;
+  }
+  .about div p {
+    font-size: 13px;
+  }
+  .about img {
+    width: 230px;
+    height: 210px;
+  }
+  .ourWorks article {
+    display: inline-block;
+  }
+  .ourWorks article section {
+    display: block;
+    width: 70%;
+    margin: 10%;
+  }  
+  .ourWorks article section a{
+    margin-left: 38%;
+  }
+}
+
+/*=========================================*/
+                /*  mobile screen   */
+/*=========================================*/
+
+@media (max-width : 575px) and (min-width : 360px){
+  nav {
+    height: auto;
+  }
+  nav h2 {
+    display: block;
+  }
+  nav ul {
+    font-size: 10px;
+    float: left;
+    margin-top: 10px;
+  }
+  nav ul li a:hover {
+    font-size: x-small;
+  }
+  main {
+    height: 417px;
+  }
+  main div h1 {
+    font-size: 10px;
+  }
+  main div p {
+    font-size: 7px;
+  }
+  .about div {
+    display: block;
+    width: 280px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .about div p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .about img {
+    width: 285px;
+    height: 170px;
+  }
+  .ourWorks article {
+    display: inline-block;
+  }
+  .ourWorks article section {
+    display: block;
+    width: 80%;
+    margin: 10% 10% 15% 10%;
+  }  
+  .ourWorks article section a{
+    margin-left: 28%;
+  }
+}
+
+footer {
+  background-color: #0e0d0e;
+  text-align: center;
+  height: 60px;
+  padding-top: 20px;
+}
